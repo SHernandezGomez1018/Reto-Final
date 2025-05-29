@@ -39,7 +39,7 @@ Precondiciones:
 6.	El sistema muestra el listado completo (VistaComedores.mostrar_listado_completo).
 
 **Flujos alternativos:**
-•	Fecha inválida → Mensaje de error.
+•	   Fecha inválida → Mensaje de error.
 
 ### **3. Registrar asistencia de un beneficiario**
 Actor: Administrador del sistema
@@ -58,8 +58,8 @@ Descripción: Registra la asistencia de un beneficiario en un comedor en una fec
 8.	El sistema muestra mensaje de confirmación.
    
 **Flujos alternativos:**
-• Beneficiario no asignado → Mensaje de error.
-• Datos inválidos → Mensaje de error.
+•    Beneficiario no asignado → Mensaje de error.
+•    Datos inválidos → Mensaje de error.
 
 ### **4. Consultar comedores disponibles**
 Actor: Administrador del sistema
