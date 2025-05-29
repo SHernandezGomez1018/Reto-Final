@@ -1,12 +1,14 @@
 # Proyecto: Sistema de Gestión de Comedores Comunitarios
 
 ### _Casos de Uso para el Sistema de Comedores Comunitarios_
+
 ##### **1. Registrar un nuevo beneficiario**
 Actor: Administrador del sistema
 Descripción: Registra un nuevo beneficiario y lo asigna a un comedor comunitario disponible.
 **Precondiciones:**
 •	El comedor debe tener cupo disponible.
 •	El documento del beneficiario no debe estar registrado previamente.
+
 **Flujo principal:**
 1.	El sistema muestra el menú principal (VistaComedores.mostrar_menu_principal).
 2.	El administrador selecciona la opción 1.
@@ -37,12 +39,14 @@ Precondiciones:
 6.	El sistema muestra el listado completo (VistaComedores.mostrar_listado_completo).
 
 **Flujos alternativos:**
-•	4a. Fecha inválida → Mensaje de error.
+•	Fecha inválida → Mensaje de error.
+
 #### **3. Registrar asistencia de un beneficiario**
 Actor: Administrador del sistema
 Descripción: Registra la asistencia de un beneficiario en un comedor en una fecha específica.
 **Precondiciones:**
 •	El beneficiario debe estar registrado en el comedor.
+
 **Flujo principal:**
 1.	El sistema muestra el menú principal.
 2.	El administrador selecciona la opción 2.
@@ -52,20 +56,24 @@ Descripción: Registra la asistencia de un beneficiario en un comedor en una fec
 6.	El administrador ingresa los datos.
 7.	El sistema valida y registra la asistencia (SistemaComedoresModelo.registrar_asistencia).
 8.	El sistema muestra mensaje de confirmación.
+   
 **Flujos alternativos:**
-•	7a. Beneficiario no asignado → Mensaje de error.
-•	7b. Datos inválidos → Mensaje de error.
-4. Consultar comedores disponibles
+• Beneficiario no asignado → Mensaje de error.
+• Datos inválidos → Mensaje de error.
+
+#### **4. Consultar comedores disponibles**
 Actor: Administrador del sistema
 Descripción: Muestra la lista de comedores con su información básica.
-Flujo principal:
+
+**Flujo principal:**
 1.	El sistema muestra el menú principal.
 2.	El administrador elige una opción que muestre comedores.
 3.	El sistema muestra nombre, dirección, cupo y beneficiarios asignados (VistaComedores.mostrar_comedores).
-5. Salir del sistema
+4. Salir del sistema
 Actor: Administrador del sistema
 Descripción: Finaliza el programa de forma segura.
-Flujo principal:
+
+**Flujo principal:**
 1.	El sistema muestra el menú principal.
 2.	El administrador selecciona "Salir".
 3.	El sistema muestra un mensaje de despedida y cierra el programa.
