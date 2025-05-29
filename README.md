@@ -88,7 +88,8 @@ Descripción: Finaliza el programa de forma segura.
 -  **CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
 -  **MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
 -  **VISTA.py:** Interfaz de usuario en consola (entrada/salida).
-###**Descripción de las Clases:**
+-  
+### **Descripción de las Clases:**
 **1. Beneficiario (MODELO.py)**
 -    Atributos: documento, nombre, edad, poblacion, asistencias
 -    Metodos: __init__, __str__, registrar
