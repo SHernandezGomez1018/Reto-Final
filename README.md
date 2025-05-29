@@ -83,40 +83,40 @@ Descripción: Finaliza el programa de forma segura.
 ![image](https://github.com/user-attachments/assets/32d41a4a-1a03-4b0a-ab3b-23d07541bf14)
 
  
-##### **Estructura General del Proyecto:**
--**MAIN.py:** Punto de entrada. Ejecuta el controlador con modelo y vista.
--**CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
--**MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
--**VISTA.py:** Interfaz de usuario en consola (entrada/salida).
-**Descripción de las Clases:**
+###**Estructura General del Proyecto:**
+-  **MAIN.py:** Punto de entrada. Ejecuta el controlador con modelo y vista.
+-  **CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
+-  **MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
+-  **VISTA.py:** Interfaz de usuario en consola (entrada/salida).
+###**Descripción de las Clases:**
 **1. Beneficiario (MODELO.py)**
-•	Atributos: documento, nombre, edad, poblacion, asistencias
-•	Métodos: __init__, __str__, registrar
+-    Atributos: documento, nombre, edad, poblacion, asistencias
+-    Metodos: __init__, __str__, registrar
 **2. Comedor (MODELO.py)**
-•	Atributos: nombre, direccion, localidad, cupo_diario, beneficiarios_asignados
-•	Métodos: __init__, __str__
+-    Atributos: nombre, direccion, localidad, cupo_diario, beneficiarios_asignados
+-    Métodos: __init__, __str__
 **3. SistemaComedoresModelo (MODELO.py)**
-•	Atributos: beneficiarios, comedores
-•	Métodos: agregar_beneficiario, buscar_beneficiario, asignar_beneficiario, generar_listado_diario, registrar_asistencia
+-    Atributos: beneficiarios, comedores
+-    Métodos: agregar_beneficiario, buscar_beneficiario, asignar_beneficiario, generar_listado_diario, registrar_asistencia
 **4. VistaComedores (VISTA.py)**
-•	Métodos: mostrar_menu_principal, obtener_opcion, mostrar_mensaje, pausar, mostrar_comedores, mostrar_listado_completo, solicitar_datos_beneficiario
+-    Métodos: mostrar_menu_principal, obtener_opcion, mostrar_mensaje, pausar, mostrar_comedores, mostrar_listado_completo, solicitar_datos_beneficiario
 **5. ControladorComedores (CONTROLADOR.py)**
-•	Métodos: ejecutar, registrar_beneficiario, generar_listado, registrar_asistencia
+-    Métodos: ejecutar, registrar_beneficiario, generar_listado, registrar_asistencia
 
 ## **Justificación del Proyecto**
 **Contexto:**
 En Ciudad Bolívar, la gestión manual de comedores comunitarios causa ineficiencia, errores y dificultades para planear y rendir cuentas.
 **Objetivo:**
 Automatizar el sistema con Python para mejorar:
-•	Registro de beneficiarios
-•	Control de cupos
-•	Reportes de asistencia
+-    Registro de beneficiarios
+-    Control de cupos
+-    Reportes de asistencia
 **Justificación Técnica:**
-•	Python es versátil, gratuito y escalable.
-•	Permite migrar a interfaces gráficas o web en el futuro.
+-    Python es versátil, gratuito y escalable.
+-    Permite migrar a interfaces gráficas o web en el futuro.
 **Impacto Esperado:**
-•	Mayor eficiencia en registro y atención.
-•	Transparencia en la asignación de recursos.
-•	Mejor planeación con datos precisos.
+-    Mayor eficiencia en registro y atención.
+-    Transparencia en la asignación de recursos.
+-    Mejor planeación con datos precisos.
 **Conclusión:**
 Este sistema contribuye directamente al bienestar social, modernizando la gestión de alimentos para familias en situación de vulnerabilidad.
