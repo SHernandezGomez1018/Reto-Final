@@ -4,6 +4,9 @@ class VistaComedores:
     def mostrar_menu_principal(self):
         # Muestra el menú principal con las opciones
         print("\n=== SISTEMA DE COMEDORES COMUNITARIOS ===")
+        print("""¡Bienvenid@ al sistema de gestión de comedores comunitarios! 
+A continuacion sigue las instrucciones para poder registrarte en el comedor de tu preferencia.""")
+        print("\nSelecciona una opción:")
         print("[1] Registrar beneficiario")
         print("[2] Registrar asistencia") 
         print("[3] Generar listado diario")
