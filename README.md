@@ -94,27 +94,28 @@ Descripción: Finaliza el programa de forma segura.
 -  **VISTA.py:** Interfaz de usuario en consola (entrada/salida).
   
 ### **Descripción de las Clases:**
-**1. Beneficiario (MODELO.py)**
+_**1. Beneficiario (MODELO.py)**_
 -    Atributos: documento, nombre, edad, poblacion, asistencias
 -    Metodos: __init__, __str__, registrar
    
-**2. Comedor (MODELO.py)**
+_**2. Comedor (MODELO.py)**_
 -    Atributos: nombre, direccion, localidad, cupo_diario, beneficiarios_asignados
 -    Métodos: __init__, __str__
   
-**3. SistemaComedoresModelo (MODELO.py)**
+_**3. SistemaComedoresModelo (MODELO.py)**_
 -    Atributos: beneficiarios, comedores
 -    Métodos: agregar_beneficiario, buscar_beneficiario, asignar_beneficiario, generar_listado_diario, registrar_asistencia
   
-**4. VistaComedores (VISTA.py)**
+_**4. VistaComedores (VISTA.py)**_
 -    Métodos: mostrar_menu_principal, obtener_opcion, mostrar_mensaje, pausar, mostrar_comedores, mostrar_listado_completo, solicitar_datos_beneficiario
 
-**5. ControladorComedores (CONTROLADOR.py)**
+_**5. ControladorComedores (CONTROLADOR.py)**_
 -    Métodos: ejecutar, registrar_beneficiario, generar_listado, registrar_asistencia
 
 ## **Justificación del Proyecto**
 **Contexto:**
 En Ciudad Bolívar, la gestión manual de comedores comunitarios causa ineficiencia, errores y dificultades para planear y rendir cuentas.
+
 **Objetivo:**
 Automatizar el sistema con Python para mejorar:
 -    Registro de beneficiarios
