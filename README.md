@@ -120,9 +120,11 @@ Automatizar el sistema con Python para mejorar:
 -    Registro de beneficiarios
 -    Control de cupos
 -    Reportes de asistencia
+  
 **Justificación Técnica:**
 -    Python es versátil, gratuito y escalable.
 -    Permite migrar a interfaces gráficas o web en el futuro.
+  
 **Impacto Esperado:**
 -    Mayor eficiencia en registro y atención.
 -    Transparencia en la asignación de recursos.
