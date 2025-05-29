@@ -30,6 +30,7 @@ Actor: Administrador del sistema
 Descripción: Muestra el listado diario de beneficiarios por comedor.
 Precondiciones:
 •	Debe ingresarse una fecha válida.
+
 **Flujo principal:**
 1.	El sistema muestra el menú principal.
 2.	El administrador selecciona la opción 3.
