@@ -112,6 +112,9 @@ _**4. VistaComedores (VISTA.py)**_
 _**5. ControladorComedores (CONTROLADOR.py)**_
 -    Métodos: ejecutar, registrar_beneficiario, generar_listado, registrar_asistencia
 
+![image](https://github.com/user-attachments/assets/14c48f6e-a4d9-4534-b523-8efac0b1bf44)
+
+
 ## **Justificación del Proyecto**
 **Contexto:**
 En Ciudad Bolívar, la gestión manual de comedores comunitarios causa ineficiencia, errores y dificultades para planear y rendir cuentas.
