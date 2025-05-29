@@ -22,9 +22,9 @@ Descripción: Registra un nuevo beneficiario y lo asigna a un comedor comunitari
 
 **Flujos alternativos:**
 
-•	    Datos inválidos → Mensaje de error y vuelta al menú.
-•	    No hay cupo disponible → Mensaje de error y vuelta al menú.
-•	    Documento ya registrado → Mensaje de error y vuelta al menú.
+-	    Datos inválidos → Mensaje de error y vuelta al menú.
+-	    No hay cupo disponible → Mensaje de error y vuelta al menú.
+-	    Documento ya registrado → Mensaje de error y vuelta al menú.
 
 ### **2. Generar listado diario de beneficiarios**
 Actor: Administrador del sistema
@@ -42,7 +42,7 @@ Precondiciones:
 
 **Flujos alternativos:**
 
-•	   Fecha inválida → Mensaje de error.
+-	    Fecha inválida → Mensaje de error.
 
 ### **3. Registrar asistencia de un beneficiario**
 Actor: Administrador del sistema
@@ -62,8 +62,8 @@ Descripción: Registra la asistencia de un beneficiario en un comedor en una fec
    
 **Flujos alternativos:**
 
-•	   Beneficiario no asignado → Mensaje de error.
-•	   Datos inválidos → Mensaje de error.
+-	    Beneficiario no asignado → Mensaje de error.
+-	    Datos inválidos → Mensaje de error.
 
 ### **4. Consultar comedores disponibles**
 Actor: Administrador del sistema
