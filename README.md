@@ -93,18 +93,18 @@ Descripción: Finaliza el programa de forma segura.
 **1. Beneficiario (MODELO.py)**
 -    Atributos: documento, nombre, edad, poblacion, asistencias
 -    Metodos: __init__, __str__, registrar
--    
+   
 **2. Comedor (MODELO.py)**
 -    Atributos: nombre, direccion, localidad, cupo_diario, beneficiarios_asignados
 -    Métodos: __init__, __str__
--    
+  
 **3. SistemaComedoresModelo (MODELO.py)**
 -    Atributos: beneficiarios, comedores
 -    Métodos: agregar_beneficiario, buscar_beneficiario, asignar_beneficiario, generar_listado_diario, registrar_asistencia
--    
+  
 **4. VistaComedores (VISTA.py)**
 -    Métodos: mostrar_menu_principal, obtener_opcion, mostrar_mensaje, pausar, mostrar_comedores, mostrar_listado_completo, solicitar_datos_beneficiario
--    
+
 **5. ControladorComedores (CONTROLADOR.py)**
 -    Métodos: ejecutar, registrar_beneficiario, generar_listado, registrar_asistencia
 
