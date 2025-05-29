@@ -21,9 +21,9 @@ Descripción: Registra un nuevo beneficiario y lo asigna a un comedor comunitari
 9.	Se muestra mensaje de confirmación.
 
 **Flujos alternativos:**
-•	Datos inválidos → Mensaje de error y vuelta al menú.
-•	No hay cupo disponible → Mensaje de error y vuelta al menú.
-•	Documento ya registrado → Mensaje de error y vuelta al menú.
+•	    Datos inválidos → Mensaje de error y vuelta al menú.
+•	    No hay cupo disponible → Mensaje de error y vuelta al menú.
+•	    Documento ya registrado → Mensaje de error y vuelta al menú.
 
 ### **2. Generar listado diario de beneficiarios**
 Actor: Administrador del sistema
@@ -59,8 +59,8 @@ Descripción: Registra la asistencia de un beneficiario en un comedor en una fec
 8.	El sistema muestra mensaje de confirmación.
    
 **Flujos alternativos:**
-•    Beneficiario no asignado → Mensaje de error.
-•    Datos inválidos → Mensaje de error.
+•	   Beneficiario no asignado → Mensaje de error.
+•	   Datos inválidos → Mensaje de error.
 
 ### **4. Consultar comedores disponibles**
 Actor: Administrador del sistema
@@ -89,7 +89,7 @@ Descripción: Finaliza el programa de forma segura.
 -  **CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
 -  **MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
 -  **VISTA.py:** Interfaz de usuario en consola (entrada/salida).
--  
+  
 ### **Descripción de las Clases:**
 **1. Beneficiario (MODELO.py)**
 -    Atributos: documento, nombre, edad, poblacion, asistencias
