@@ -5,8 +5,8 @@ class VistaComedores:
         # Muestra el menú principal con las opciones
         print("\n=== SISTEMA DE COMEDORES COMUNITARIOS ===")
         print("[1] Registrar beneficiario")
-        print("[2] Generar listado diario")
-        print("[3] Registrar asistencia") 
+        print("[2] Registrar asistencia") 
+        print("[3] Generar listado diario")
         print("[4] Salir")
 
     def obtener_opcion(self):
@@ -41,14 +41,20 @@ class VistaComedores:
         for i, comedor in enumerate(comedores, 1):
             print(f"{i}. {comedor.nombre} - {comedor.direccion} (Cupo: {comedor.cupo_diario}, Asignados: {len(comedor.beneficiarios_asignados)})")
 
-    def mostrar_listado(self, listado, nombre_comedor, fecha):
-        # Muestra el listado de personas en un comedor específico
-        print(f"\nLISTADO DEL COMEDOR {nombre_comedor} - {fecha}")
-        if not listado:
-            print("No hay beneficiarios asignados")
-        else:
-            for i, ben in enumerate(listado, 1):
-                print(f"{i}. {ben.nombre} - Asistencias: {len(ben.asistencias)}")
+    def mostrar_listado_completo(self, comedores_con_listados, fecha):
+        """Muestra todos los comedores con sus beneficiarios en una sola vista"""
+        print(f"\n=== LISTADO GENERAL DE COMEDORES - {fecha} ===")
+        
+        for comedor, listado in comedores_con_listados:
+            print(f"\n● {comedor.nombre} ({len(listado)} beneficiarios):")
+            if not listado:
+                print("  No hay beneficiarios asignados")
+            else:
+                for i, ben in enumerate(listado, 1):
+                    print(f"  {i}. {ben.nombre} - Asistencias: {len(ben.asistencias)}")
+        
+        print("\n" + "="*50)  # Línea separadora
+        print(f"Total comedores: {len(comedores_con_listados)}")
 
     def solicitar_datos_beneficiario(self):
         # Pide los datos para registrar una nueva persona

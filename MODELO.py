@@ -1,8 +1,23 @@
+# Clase base para herencia simple
+class Persona:
+    def __init__(self, documento, nombre, edad):
+        self.documento = documento
+        self.nombre = nombre
+        self.edad = edad
+
+    def __str__(self):
+        return f"{self.nombre} (Doc: {self.documento})"
+
+# Clase para herencia múltiple
+class Registrable:
+    def registrar(self):
+        return f"{self.nombre} registrado correctamente."
+
 # Clase que representa a una persona que recibe ayuda del comedor
-class Beneficiario:
+class Beneficiario(Persona, Registrable):
     def __init__(self, documento, nombre, edad, poblacion):
         # Datos básicos del beneficiario
-        self.documento = documento  # Número de identificación
+        super().__init__(documento, nombre, edad)
         self.nombre = nombre        # Nombre completo
         self.edad = edad            # Edad en años
         self.poblacion = poblacion  # Tipo: niño, adulto mayor, etc.
@@ -36,8 +51,12 @@ class SistemaComedoresModelo:
         
         # Lista de comedores disponibles (se crean automáticamente al iniciar)
         self.comedores = [
-            Comedor("PERDOMO", "AV VILLAVICENCIO No. 60B-05 SUR", "Ciudad Bolívar", 10),
-            # ... (otros comedores con sus datos)
+            Comedor("Perdomo", "AV VILLAVICENCIO No. 60B-05 SUR", "Ciudad Bolívar", 10),
+            Comedor("Los Luceros", "Plaza de Mercado de Los Luceros", "Ciudad Bolívar", 10),
+            Comedor("Jerusalen Canteras", "CARRERA 47D # 68G-08SUR", "Ciudad Bolívar", 10),
+            Comedor("Estrella del sur", "CLL 74 No. 18 BIS-18", "Ciudad Bolívar", 10),
+            Comedor("Santa Viviana", "CALLE 75D SUR No. 75C-03 SUR", "Ciudad Bolívar", 10),
+            Comedor("Arborizadora", "CRA 40 No. 63I-25 SUR", "Ciudad Bolívar", 10),
         ]
 
     # Agrega un nuevo beneficiario y lo asigna a un comedor
