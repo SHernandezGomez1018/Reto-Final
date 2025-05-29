@@ -1,8 +1,8 @@
 # Proyecto: Sistema de Gestión de Comedores Comunitarios
 
-### _Casos de Uso para el Sistema de Comedores Comunitarios_
+## _Casos de Uso para el Sistema de Comedores Comunitarios_
 
-##### **1. Registrar un nuevo beneficiario**
+### **1. Registrar un nuevo beneficiario**
 Actor: Administrador del sistema
 Descripción: Registra un nuevo beneficiario y lo asigna a un comedor comunitario disponible.
 **Precondiciones:**
@@ -25,7 +25,7 @@ Descripción: Registra un nuevo beneficiario y lo asigna a un comedor comunitari
 •	No hay cupo disponible → Mensaje de error y vuelta al menú.
 •	Documento ya registrado → Mensaje de error y vuelta al menú.
 
-##### **2. Generar listado diario de beneficiarios**
+### **2. Generar listado diario de beneficiarios**
 Actor: Administrador del sistema
 Descripción: Muestra el listado diario de beneficiarios por comedor.
 Precondiciones:
@@ -41,7 +41,7 @@ Precondiciones:
 **Flujos alternativos:**
 •	Fecha inválida → Mensaje de error.
 
-#### **3. Registrar asistencia de un beneficiario**
+### **3. Registrar asistencia de un beneficiario**
 Actor: Administrador del sistema
 Descripción: Registra la asistencia de un beneficiario en un comedor en una fecha específica.
 **Precondiciones:**
@@ -61,7 +61,7 @@ Descripción: Registra la asistencia de un beneficiario en un comedor en una fec
 • Beneficiario no asignado → Mensaje de error.
 • Datos inválidos → Mensaje de error.
 
-#### **4. Consultar comedores disponibles**
+### **4. Consultar comedores disponibles**
 Actor: Administrador del sistema
 Descripción: Muestra la lista de comedores con su información básica.
 
@@ -79,13 +79,16 @@ Descripción: Finaliza el programa de forma segura.
 3.	El sistema muestra un mensaje de despedida y cierra el programa.
 
 ### **Mapa de Navegación del Sistema**
+
+![image](https://github.com/user-attachments/assets/32d41a4a-1a03-4b0a-ab3b-23d07541bf14)
+
  
-##### **Estructura General del Proyecto**
-•	**MAIN.py:** Punto de entrada. Ejecuta el controlador con modelo y vista.
-•	**CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
-•	**MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
-•	**VISTA.py:** Interfaz de usuario en consola (entrada/salida).
-**Descripción de las Clases**
+##### **Estructura General del Proyecto:**
+-**MAIN.py:** Punto de entrada. Ejecuta el controlador con modelo y vista.
+-**CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
+-**MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
+-**VISTA.py:** Interfaz de usuario en consola (entrada/salida).
+**Descripción de las Clases:**
 **1. Beneficiario (MODELO.py)**
 •	Atributos: documento, nombre, edad, poblacion, asistencias
 •	Métodos: __init__, __str__, registrar
