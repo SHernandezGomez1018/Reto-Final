@@ -83,7 +83,7 @@ Descripción: Finaliza el programa de forma segura.
 ![image](https://github.com/user-attachments/assets/32d41a4a-1a03-4b0a-ab3b-23d07541bf14)
 
  
-###**Estructura General del Proyecto:**
+### **Estructura General del Proyecto:**
 -  **MAIN.py:** Punto de entrada. Ejecuta el controlador con modelo y vista.
 -  **CONTROLADOR.py:** Coordina las acciones entre vista y modelo.
 -  **MODELO.py:** Define la lógica y estructura de datos (beneficiarios y comedores).
